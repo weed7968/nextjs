@@ -3,9 +3,8 @@ export default async function Read(props) {
   const topic = await resp.json();
   return (
     <>
-      <h2>Read</h2>
+      <h2>{topic.title}</h2>
       {topic.body}
-      paramters : {props.params.id}
     </>
   );
 }
